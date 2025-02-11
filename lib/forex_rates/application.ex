@@ -17,6 +17,7 @@ defmodule ForexRates.Application do
       # Start a worker by calling: ForexRates.Worker.start_link(arg)
       # {ForexRates.Worker, arg},
       # Start to serve requests, typically the last entry
+      {ForexRates.FixerClient, %{}},
       ForexRatesWeb.Endpoint
     ]
 
