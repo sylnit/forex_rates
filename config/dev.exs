@@ -65,3 +65,9 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+config :forex_rates,
+  fixer: [
+    base_url: System.get_env("FIXER_BASE_URL"),
+    access_key: System.get_env("ACCESS_KEY")
+  ]
